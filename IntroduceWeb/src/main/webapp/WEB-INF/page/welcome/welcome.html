@@ -1,0 +1,24 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Welcome</title>
+</head>
+<body>
+	<div>
+		<div>
+			<p>Chào mừng bạn đến với website giới thiệu</p>
+		</div>
+		<div>
+			<form th:action="@{goToSales}">
+				<button type="submit" >Website Bán Hàng</button>
+			</form>
+			<form th:action="@{goToNews}">
+				<button type="submit" >Website Tin Tức</button>
+			</form>
+			<form th:action="@{goToIntroduce}">
+				<button type="submit" >Trang Giới Thiệu</button>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
